@@ -6,7 +6,7 @@ let context = null;
 function extractPageData() {
   const text = (element) => element ? element.innerText : '';
   const titleElement = document.querySelector('[data-testid="issue-title"], .gh-header-title .js-issue-title, h1');
-  const descriptionElement = document.querySelector('[data-testid="issue-body"], .js-comment-container .comment-body, .timeline-comment-group .comment-body');
+  const descriptionElement = document.querySelector('[data-testid="issue-body-viewer"] [data-testid="markdown-body"], [data-testid="issue-body"] [data-testid="markdown-body"], .js-comment-container .comment-body, .timeline-comment-group .comment-body');
   return {
     title: text(titleElement).replace(/\s+#\d+\s*$/, ''),
     description: text(descriptionElement),
@@ -28,7 +28,7 @@ async function copy(action, button) {
   try {
     await navigator.clipboard.writeText(buildClipboardText(context, action));
     const original = button.textContent;
-    button.textContent = 'Copied';
+    button.textContent = 'Copied ✓';
     setTimeout(() => { button.textContent = original; }, 1200);
   } catch {
     ui.state.textContent = 'Clipboard write failed';
