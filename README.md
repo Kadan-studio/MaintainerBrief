@@ -21,7 +21,11 @@ Lists, repository pages, discussions, releases, comparisons, GitHub Enterprise, 
 
 ## Privacy
 
-Page data is processed locally in the browser. MaintainerBrief does not collect, store, or transmit user data. It has no analytics, telemetry, GitHub API calls, AI API calls, or other external network requests. See [PRIVACY.md](PRIVACY.md).
+MaintainerBrief reads the necessary information from the current supported GitHub page only when the user invokes the extension.
+
+The data is processed locally to generate clipboard content and is not persisted or transmitted externally.
+
+MaintainerBrief uses no analytics, telemetry, GitHub API, AI API, backend, or external network service. See [PRIVACY.md](PRIVACY.md).
 
 ## Permissions
 
