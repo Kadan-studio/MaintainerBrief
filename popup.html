@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaintainerBrief</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>MaintainerBrief</h1>
+    <p id="state" class="eyebrow">Checking current page</p>
+    <p id="repository" class="repository" hidden></p>
+    <h2 id="title" hidden></h2>
+    <dl id="signals" hidden>
+      <div><dt>Description</dt><dd id="description-status"></dd></div>
+      <div><dt>Selected text</dt><dd id="selection-status"></dd></div>
+    </dl>
+    <div class="actions">
+      <button id="primary" type="button" disabled></button>
+      <button id="secondary" type="button" disabled></button>
+    </div>
+    <p class="local">Processed locally</p>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

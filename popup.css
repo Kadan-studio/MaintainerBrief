@@ -1,0 +1,18 @@
+:root { color: #1f2328; background: #fff; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body { width: 360px; margin: 0; }
+main { padding: 20px; }
+h1 { margin: 0 0 14px; font-size: 19px; line-height: 1.2; }
+h2 { margin: 8px 0 16px; font-size: 16px; line-height: 1.35; overflow-wrap: anywhere; }
+.eyebrow { margin: 0 0 8px; color: #0969da; font-size: 12px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.repository { margin: 0; color: #57606a; font-size: 14px; font-weight: 600; }
+dl { margin: 0 0 18px; border-top: 1px solid #d0d7de; }
+dl div { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-bottom: 1px solid #d0d7de; font-size: 13px; }
+dt { color: #57606a; } dd { margin: 0; font-weight: 600; }
+.actions { display: grid; gap: 8px; }
+button { min-height: 38px; border: 1px solid #0969da; border-radius: 6px; background: #0969da; color: #fff; cursor: pointer; font: inherit; font-weight: 650; }
+button + button { background: #fff; color: #0969da; }
+button:hover:not(:disabled) { filter: brightness(.94); }
+button:active:not(:disabled) { transform: translateY(1px); }
+button:focus-visible { outline: 3px solid #80bfff; outline-offset: 2px; }
+button:disabled { border-color: #d0d7de; background: #f6f8fa; color: #8c959f; cursor: not-allowed; }
+.local { margin: 18px 0 0; color: #57606a; font-size: 12px; text-align: center; }
